@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pricing Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.2.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <section class="login">
+      <div class="container-fluid">
+        <div class="row gap-0">
+          <div class="col-md-3 mobile">
+            <div class="row sidebar">
+              <div class="col-md-12">
+                <div class="mt-5">
+                  <ul class="list-group list-group-flush bg-transparent">
+                    <li class="list-group-item bg-transparent border-0">
+                      <img
+                        src="./assets/images/little_logo.png"
+                        width="36px"
+                        height="54px"
+                        alt="logo"
+                      />
+                      <div></div>
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                      <img
+                        src="./assets/images/search.png"
+                        width="44px"
+                        height="44px"
+                        alt="logo"
+                      />
+                      <div></div>
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                      <img
+                        src="./assets/images/home.png"
+                        width="44px"
+                        height="44px"
+                        alt="logo"
+                      />
+                      <div class="list_title ">
+                        <a href="dashboard.html"> Dashboard</a>
+                      </div>
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                      <img
+                        src="./assets/images/avatar.png"
+                        width="44px"
+                        height="44px"
+                        alt="logo"
+                      />
+                      <div class="list_title ">
+                        <a href="avatar.html">Avatar</a>
+                      </div>
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                      <img
+                        src="./assets/images/video.png"
+                        width="44px"
+                        height="44px"
+                        alt="logo"
+                      />
+                      <div class="list_title">
+                        <a href="video.html">Video</a>
+                      </div>
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                      <img
+                        src="./assets/images/Pricing_active.png"
+                        width="44px"
+                        height="44px"
+                        alt="logo"
+                      />
+                      <div class="list_title active">
+                        <a href="Pricing.html">Pricing</a>
+                      </div>
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                      <img
+                        src="./assets/images/Talking.png"
+                        width="44px"
+                        height="44px"
+                        alt="logo"
+                      />
+                      <div class="list_title">
+                        <a href="Talking.html">User Talking Photos</a>
+                      </div>
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                      <img
+                        src="./assets/images/Credit.png"
+                        width="44px"
+                        height="44px"
+                        alt="logo"
+                      />
+                      <div class="list_title">
+                        <a href="Credit.html">Credit</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="mobile_faster">
+              <div class="absolute_bar p-2">
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-menu" onclick="myFunction12()" ><img src="./assets/images/SearchBar.png" alt="menu" /></button>
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                         <img
+                         src="./assets/images/profile.png"
+                         width="44px"
+                         height="44px"
+                         alt="avatar"
+                       />
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="profile.html"> Profile</a></li>
+                      <li><a class="dropdown-item" href="changePassword.html"> Change Password</a></li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div  id="mysidebar" style="display: none;">
+                <div class="row sidebar">
+                  <div class="col-md-12">
+                    <div class="mt-5">
+                      <ul class="list-group list-group-flush bg-transparent">
+                        <li class="list-group-item bg-transparent border-0">
+                          <img
+                            src="./assets/images/little_logo.png"
+                            width="36px"
+                            height="54px"
+                            alt="logo"
+                          />
+                          <div></div>
+                        </li>
+                        <li class="list-group-item bg-transparent border-0">
+                          <img
+                            src="./assets/images/search.png"
+                            width="44px"
+                            height="44px"
+                            alt="logo"
+                          />
+                          <div></div>
+                        </li>
+                        <li class="list-group-item bg-transparent border-0">
+                          <img
+                            src="./assets/images/home.png"
+                            width="44px"
+                            height="44px"
+                            alt="logo"
+                          />
+                          <div class="list_title ">
+                            <a href="dashboard.html"> Dashboard</a>
+                          </div>
+                        </li>
+                        <li class="list-group-item bg-transparent border-0">
+                          <img
+                            src="./assets/images/avatar.png"
+                            width="44px"
+                            height="44px"
+                            alt="logo"
+                          />
+                          <div class="list_title ">
+                            <a href="avatar.html">Avatar</a>
+                          </div>
+                        </li>
+                        <li class="list-group-item bg-transparent border-0">
+                          <img
+                            src="./assets/images/video.png"
+                            width="44px"
+                            height="44px"
+                            alt="logo"
+                          />
+                          <div class="list_title">
+                            <a href="video.html">Video</a>
+                          </div>
+                        </li>
+                        <li class="list-group-item bg-transparent border-0">
+                          <img
+                            src="./assets/images/Pricing_active.png"
+                            width="44px"
+                            height="44px"
+                            alt="logo"
+                          />
+                          <div class="list_title active">
+                            <a href="Pricing.html">Pricing</a>
+                          </div>
+                        </li>
+                        <li class="list-group-item bg-transparent border-0">
+                          <img
+                            src="./assets/images/Talking.png"
+                            width="44px"
+                            height="44px"
+                            alt="logo"
+                          />
+                          <div class="list_title">
+                            <a href="Talking.html">User Talking Photos</a>
+                          </div>
+                        </li>
+                        <li class="list-group-item bg-transparent border-0">
+                          <img
+                            src="./assets/images/Credit.png"
+                            width="44px"
+                            height="44px"
+                            alt="logo"
+                          />
+                          <div class="list_title">
+                            <a href="Credit.html">Credit</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <p class="text-yellow text-center pt-4">
+                Create engaging video 10x faster with AI
+              </p>
+              <div class="text-center pb-4">
+                <button class="btn btn-pdf" type="button">
+                  Import PPT/PDF
+                </button>
+                <button class="btn btn-video" type="button">
+                  Create Video
+                </button>
+            </div>
+            </div>
+
+            
+
+            <div class="faster">
+              <div class="d-flex justify-content-between">
+                
+                <p class="text-yellow">
+                  Create engaging video 10x faster with AI
+                </p>
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-pdf" type="button">
+                    Import PPT/PDF
+                  </button>
+                  <button class="btn btn-video" type="button">
+                    Create Video
+                  </button>
+
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                         <img
+                         src="./assets/images/profile.png"
+                         width="44px"
+                         height="44px"
+                         alt="avatar"
+                       />
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="profile.html"> Profile</a></li>
+                      <li><a class="dropdown-item" href="changePassword.html"> Change Password</a></li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+           <div class="mt-4 px-3">
+              <div>
+                  <h4 class="text-center text-yellow mb-3">Pricing</h4>
+
+                  <div class="d-flex justify-content-center">
+                    <div class="d-flex">
+                      <label class="form-check-label text-white fs-5">Pay Monthly</label>
+                      <div class="form-check form-switch mx-4 mt-1">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                      </div>       
+                        <label class="form-check-label text-white fs-5">Pay Yearly</label>
+                        <div class="offer-off">
+                          20% off
+                        </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="container mt-5">
+                <div class="row gap-0">
+                   <div class="col-md-3 prize-box ">
+                     <div class="mb-3">
+                      <h3 class="text-yellow fs-4">Free </h3>
+                      <h1>$0</h1>
+                      <p class="mt-4 mb-5">1- free credit</p>
+                      <div class="feact">
+                        <ul>
+                          <li>All Public Avatars</li>
+                          <li>All Templates</li>
+                          <li>Talking Photo</li>
+                          <li>Avatar FaceSwap</li>
+                          <li>Full Editor Access</li>
+                        </ul>
+                      </div>
+
+                      <p>Enjoy</p>
+                     </div>
+                   </div>
+                   <div class="col-md-3 prize-box">
+                    <div class="mb-3">
+                      <div class="d-flex justify-content-between">
+                        <h3 class="text-yellow fs-4">Creator </h3>
+                        <p>$3/Minute</p>
+                      </div>
+                     <p><span class="fs-1 fw-bold"> $60 </span> /Month</p>
+                     <div class="container my-2">
+                      <input type="range" min="15" max="60" step="15" value="30" class="custom-range" id="slider1">
+                      <div class="d-flex justify-content-center">
+                          <!-- <span>15</span> -->
+                          <span>30</span>
+                          <!-- <span>60</span> -->
+                      </div>
+                  </div>
+                     <div class="feact">
+                       <ul>
+                         <li>Total 20 Minutes/Month</li>
+                         <li>All Free Benefits</li>
+                         <li>Up To 10-min long</li>
+                         <li>Premium Voices</li>
+                         <li>Auto Captions</li>
+                         <li>No Watermark</li>
+                         <li>Priority Video Processing</li>
+                       </ul>
+                     </div>
+
+                     <p>Your 20-min / month plan is active Upgrade for more credits</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 prize-box">
+                    <div class="mb-3">
+                     <h3 class="text-yellow fs-4">Pro </h3>
+                     <p class="d-flex justify-content-between align-items-md-center"><span class="fs-1 fw-bold"> $225 </span> 1- free credit</p>
+                     <div class="container my-2">
+                      <input type="range" min="15" max="60" step="15" value="30" class="custom-range" id="slider">
+                      <div class="d-flex slid justify-content-center">
+                          <!-- <span>15</span> -->
+                          <span>30</span>
+                          <!-- <span>60</span> -->
+                      </div>
+                  </div>
+                     <div class="feact">
+                       <ul>
+                         <li>Total 90 Minutes/Month</li>
+                         <li>All Essential Benefits</li>
+                         <li>Up To 10-min long</li>
+                         <li>API Access</li>
+                       </ul>
+                     </div>
+                      <div class="text-center">
+                        <button class="btn btn-video me-0">Switch</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 prize-box">
+                    <div class="mb-3">
+                     <h3 class="text-yellow fs-4">Enterprise </h3>
+                     <h1>Let’s Talk</h1>
+                     <p>Customized Plans up to Unlimited</p>
+                     <div class="feact mt-4">
+                       <ul>
+                         <li>Large Volume </li>
+                         <li>All Pro Benefits</li>
+                         <li>24/7 Support</li>
+                       </ul>
+                     </div>
+
+                     <p class="text-center">Back a Meeting</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      $(document).ready(function () {
+          $("#slider").on("input change", function () {
+              let value = $(this).val();
+              $(".d-flex.slid span:eq(0)").text(value);
+          });
+          $("#slider1").on("input change", function () {
+              let value = $(this).val();
+              $(".d-flex span:eq(0)").text(value);
+          });
+      });
+  </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
