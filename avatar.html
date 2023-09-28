@@ -11,6 +11,11 @@
       crossorigin="anonymous"
     />
     <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/little_logo.png"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
@@ -28,7 +33,143 @@
     <section class="login">
       <div class="container-fluid">
         <div class="row gap-0">
-              <div class="col-md-3 mobile">
+          <div class="col-md-3 mobile">
+            <div class="row sidebar">
+              <div class="col-md-12">
+                <div class="mt-5">
+                  <ul class="list-group list-group-flush bg-transparent">
+                    <li class="list-group-item bg-transparent border-0">
+                      <img
+                        src="./assets/images/little_logo.png"
+                        width="36px"
+                        height="54px"
+                        alt="logo"
+                      />
+                      <div></div>
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                      <img
+                        src="./assets/images/search.png"
+                        width="44px"
+                        height="44px"
+                        alt="logo"
+                      />
+                      <div></div>
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                      <img
+                        src="./assets/images/home.png"
+                        width="44px"
+                        height="44px"
+                        alt="logo"
+                      />
+                      <div class="list_title">
+                        <a href="dashboard.html"> Dashboard</a>
+                      </div>
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                      <img
+                        src="./assets/images/avatar_active.png"
+                        width="44px"
+                        height="44px"
+                        alt="logo"
+                      />
+                      <div class="list_title active">
+                        <a href="avatar.html">Avatar</a>
+                      </div>
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                      <img
+                        src="./assets/images/video.png"
+                        width="44px"
+                        height="44px"
+                        alt="logo"
+                      />
+                      <div class="list_title">
+                        <a href="video.html">Video</a>
+                      </div>
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                      <img
+                        src="./assets/images/Pricing.png"
+                        width="44px"
+                        height="44px"
+                        alt="logo"
+                      />
+                      <div class="list_title">
+                        <a href="Pricing.html">Pricing</a>
+                      </div>
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                      <img
+                        src="./assets/images/Talking.png"
+                        width="44px"
+                        height="44px"
+                        alt="logo"
+                      />
+                      <div class="list_title">
+                        <a href="Talking.html">User Talking Photos</a>
+                      </div>
+                    </li>
+                    <li class="list-group-item bg-transparent border-0">
+                      <img
+                        src="./assets/images/Credit.png"
+                        width="44px"
+                        height="44px"
+                        alt="logo"
+                      />
+                      <div class="list_title">
+                        <a href="Credit.html">Credit</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="mobile_faster">
+              <div class="absolute_bar p-2">
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-menu" onclick="myFunction12()">
+                    <img src="./assets/images/SearchBar.png" alt="menu" />
+                  </button>
+                  <div class="dropdown">
+                    <button
+                      class="btn dropdown-toggle"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="./assets/images/profile.png"
+                        width="44px"
+                        height="44px"
+                        alt="avatar"
+                      />
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="profile.html">
+                          Profile</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="changePassword.html">
+                          Change Password</a
+                        >
+                      </li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div id="mysidebar" style="display: none">
                 <div class="row sidebar">
                   <div class="col-md-12">
                     <div class="mt-5">
@@ -58,7 +199,7 @@
                             height="44px"
                             alt="logo"
                           />
-                          <div class="list_title ">
+                          <div class="list_title">
                             <a href="dashboard.html"> Dashboard</a>
                           </div>
                         </li>
@@ -69,7 +210,7 @@
                             height="44px"
                             alt="logo"
                           />
-                          <div class="list_title active ">
+                          <div class="list_title active">
                             <a href="avatar.html">Avatar</a>
                           </div>
                         </li>
@@ -122,172 +263,68 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-9">
-                <div class="mobile_faster">
-                  <div class="absolute_bar p-2">
-                    <div class="d-flex justify-content-between">
-                      <button class="btn btn-menu" onclick="myFunction12()" ><img src="./assets/images/SearchBar.png" alt="menu" /></button>
-                      <div class="dropdown">
-                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                             <img
-                             src="./assets/images/profile.png"
-                             width="44px"
-                             height="44px"
-                             alt="avatar"
-                           />
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="profile.html"> Profile</a></li>
-                          <li><a class="dropdown-item" href="changePassword.html"> Change Password</a></li>
-                          <li><a class="dropdown-item" href="#">Logout</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <div  id="mysidebar" style="display: none;">
-                    <div class="row sidebar">
-                      <div class="col-md-12">
-                        <div class="mt-5">
-                          <ul class="list-group list-group-flush bg-transparent">
-                            <li class="list-group-item bg-transparent border-0">
-                              <img
-                                src="./assets/images/little_logo.png"
-                                width="36px"
-                                height="54px"
-                                alt="logo"
-                              />
-                              <div></div>
-                            </li>
-                            <li class="list-group-item bg-transparent border-0">
-                              <img
-                                src="./assets/images/search.png"
-                                width="44px"
-                                height="44px"
-                                alt="logo"
-                              />
-                              <div></div>
-                            </li>
-                            <li class="list-group-item bg-transparent border-0">
-                              <img
-                                src="./assets/images/home.png"
-                                width="44px"
-                                height="44px"
-                                alt="logo"
-                              />
-                              <div class="list_title ">
-                                <a href="dashboard.html"> Dashboard</a>
-                              </div>
-                            </li>
-                            <li class="list-group-item bg-transparent border-0">
-                              <img
-                                src="./assets/images/avatar_active.png"
-                                width="44px"
-                                height="44px"
-                                alt="logo"
-                              />
-                              <div class="list_title active">
-                                <a href="avatar.html">Avatar</a>
-                              </div>
-                            </li>
-                            <li class="list-group-item bg-transparent border-0">
-                              <img
-                                src="./assets/images/video.png"
-                                width="44px"
-                                height="44px"
-                                alt="logo"
-                              />
-                              <div class="list_title">
-                                <a href="video.html">Video</a>
-                              </div>
-                            </li>
-                            <li class="list-group-item bg-transparent border-0">
-                              <img
-                                src="./assets/images/Pricing.png"
-                                width="44px"
-                                height="44px"
-                                alt="logo"
-                              />
-                              <div class="list_title">
-                                <a href="Pricing.html">Pricing</a>
-                              </div>
-                            </li>
-                            <li class="list-group-item bg-transparent border-0">
-                              <img
-                                src="./assets/images/Talking.png"
-                                width="44px"
-                                height="44px"
-                                alt="logo"
-                              />
-                              <div class="list_title">
-                                <a href="Talking.html">User Talking Photos</a>
-                              </div>
-                            </li>
-                            <li class="list-group-item bg-transparent border-0">
-                              <img
-                                src="./assets/images/Credit.png"
-                                width="44px"
-                                height="44px"
-                                alt="logo"
-                              />
-                              <div class="list_title">
-                                <a href="Credit.html">Credit</a>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <p class="text-yellow text-center pt-4">
-                    Create engaging video 10x faster with AI
-                  </p>
-                  <div class="text-center pb-4">
-                    <button class="btn btn-pdf" type="button">
-                      Import PPT/PDF
+
+              <p class="text-yellow text-center pt-4">
+                Create engaging video 10x faster with AI
+              </p>
+              <div class="text-center pb-4">
+                <button class="btn btn-pdf" type="button">
+                  Import PPT/PDF
+                </button>
+                <button class="btn btn-video" type="button">
+                  Create Video
+                </button>
+              </div>
+            </div>
+
+            <div class="faster">
+              <div class="d-flex justify-content-between">
+                <p class="text-yellow">
+                  Create engaging video 10x faster with AI
+                </p>
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-pdf" type="button">
+                    Import PPT/PDF
+                  </button>
+                  <button class="btn btn-video" type="button">
+                    Create Video
+                  </button>
+
+                  <div class="dropdown">
+                    <button
+                      class="btn dropdown-toggle"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="./assets/images/profile.png"
+                        width="44px"
+                        height="44px"
+                        alt="avatar"
+                      />
                     </button>
-                    <button class="btn btn-video" type="button">
-                      Create Video
-                    </button>
-                </div>
-                </div>
-    
-                
-    
-                <div class="faster">
-                  <div class="d-flex justify-content-between">
-                    
-                    <p class="text-yellow">
-                      Create engaging video 10x faster with AI
-                    </p>
-                    <div class="d-flex justify-content-between">
-                      <button class="btn btn-pdf" type="button">
-                        Import PPT/PDF
-                      </button>
-                      <button class="btn btn-video" type="button">
-                        Create Video
-                      </button>
-    
-                      <div class="dropdown">
-                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                             <img
-                             src="./assets/images/profile.png"
-                             width="44px"
-                             height="44px"
-                             alt="avatar"
-                           />
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="profile.html"> Profile</a></li>
-                          <li><a class="dropdown-item" href="changePassword.html"> Change Password</a></li>
-                          <li><a class="dropdown-item" href="#">Logout</a></li>
-                        </ul>
-                      </div>
-                      
-                    </div>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="profile.html">
+                          Profile</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="changePassword.html">
+                          Change Password</a
+                        >
+                      </li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
                   </div>
                 </div>
+              </div>
+            </div>
 
             <div class="mt-4 px-3">
               <h5 class="text-yellow text-center">
@@ -339,94 +376,94 @@
               </div>
               <div class="row custom-columns">
                 <div class="col-md-2">
-                    <div class="avatar1">
-                         <img src="./assets/images/avtar.png" alt="Avatar1"/>
-                         <p>My Projects</p>
-                    </div>
+                  <div class="avatar1">
+                    <img src="./assets/images/avtar.png" alt="Avatar1" />
+                    <p>My Projects</p>
+                  </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="avatar1">
-                         <img src="./assets/images/avtar1.png" alt="Avatar1"/>
-                         <p>My Projects</p>
-                    </div>
+                  <div class="avatar1">
+                    <img src="./assets/images/avtar1.png" alt="Avatar1" />
+                    <p>My Projects</p>
+                  </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="avatar1">
-                         <img src="./assets/images/avtar2.png" alt="Avatar1"/>
-                         <p>My Projects</p>
-                    </div>
+                  <div class="avatar1">
+                    <img src="./assets/images/avtar2.png" alt="Avatar1" />
+                    <p>My Projects</p>
+                  </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="avatar1">
-                         <img src="./assets/images/avtar3.png" alt="Avatar1"/>
-                         <p>My Projects</p>
-                    </div>
+                  <div class="avatar1">
+                    <img src="./assets/images/avtar3.png" alt="Avatar1" />
+                    <p>My Projects</p>
+                  </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="avatar1">
-                         <img src="./assets/images/avtar4.png" alt="Avatar1"/>
-                         <p>My Projects</p>
-                    </div>
+                  <div class="avatar1">
+                    <img src="./assets/images/avtar4.png" alt="Avatar1" />
+                    <p>My Projects</p>
+                  </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="avatar1">
-                         <img src="./assets/images/avtar5.png" alt="Avatar1"/>
-                         <p>My Projects</p>
-                    </div>
+                  <div class="avatar1">
+                    <img src="./assets/images/avtar5.png" alt="Avatar1" />
+                    <p>My Projects</p>
+                  </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="avatar1">
-                         <img src="./assets/images/avtar6.png" alt="Avatar1"/>
-                         <p>My Projects</p>
-                    </div>
+                  <div class="avatar1">
+                    <img src="./assets/images/avtar6.png" alt="Avatar1" />
+                    <p>My Projects</p>
+                  </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="avatar1">
-                         <img src="./assets/images/avtar7.png" alt="Avatar1"/>
-                         <p>My Projects</p>
-                    </div>
+                  <div class="avatar1">
+                    <img src="./assets/images/avtar7.png" alt="Avatar1" />
+                    <p>My Projects</p>
+                  </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="avatar1">
-                         <img src="./assets/images/avtar8.png" alt="Avatar1"/>
-                         <p>My Projects</p>
-                    </div>
+                  <div class="avatar1">
+                    <img src="./assets/images/avtar8.png" alt="Avatar1" />
+                    <p>My Projects</p>
+                  </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="avatar1">
-                         <img src="./assets/images/avtar9.png" alt="Avatar1"/>
-                         <p>My Projects</p>
-                    </div>
+                  <div class="avatar1">
+                    <img src="./assets/images/avtar9.png" alt="Avatar1" />
+                    <p>My Projects</p>
+                  </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="avatar1">
-                         <img src="./assets/images/avtar.png" alt="Avatar1"/>
-                         <p>My Projects</p>
-                    </div>
+                  <div class="avatar1">
+                    <img src="./assets/images/avtar.png" alt="Avatar1" />
+                    <p>My Projects</p>
+                  </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="avatar1">
-                         <img src="./assets/images/avtar1.png" alt="Avatar1"/>
-                         <p>My Projects</p>
-                    </div>
+                  <div class="avatar1">
+                    <img src="./assets/images/avtar1.png" alt="Avatar1" />
+                    <p>My Projects</p>
+                  </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="avatar1">
-                         <img src="./assets/images/avtar2.png" alt="Avatar1"/>
-                         <p>My Projects</p>
-                    </div>
+                  <div class="avatar1">
+                    <img src="./assets/images/avtar2.png" alt="Avatar1" />
+                    <p>My Projects</p>
+                  </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="avatar1">
-                         <img src="./assets/images/avtar3.png" alt="Avatar1"/>
-                         <p>My Projects</p>
-                    </div>
+                  <div class="avatar1">
+                    <img src="./assets/images/avtar3.png" alt="Avatar1" />
+                    <p>My Projects</p>
+                  </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="avatar1">
-                         <img src="./assets/images/avtar4.png" alt="Avatar1"/>
-                         <p>My Projects</p>
-                    </div>
+                  <div class="avatar1">
+                    <img src="./assets/images/avtar4.png" alt="Avatar1" />
+                    <p>My Projects</p>
+                  </div>
                 </div>
               </div>
             </div>

@@ -10,87 +10,101 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/little_logo.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section class="login">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6">
-               <div class="logn-form">
-                    <img src="./assets/images/logo.png" alt="logo" />
-
-                    <h1 class="title">Welcome</h1>
-                    <form action="dashboard.html" class="form">
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label"
-                            >Email </label
-                          >
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"
-                          />
-                        </div>
-                        <div class="mb-3">
-                          <label for="password" class="form-label"
-                            >Password</label
-                          >
-                          <div class="password_eyes">
-                               <input type="password" id="password"  class="form-control">
-                               <span class="toggle-password" id="togglePassword">
-                                   <i class="fa fa-eye" id="eye"></i>
-                               </span>
-                          </div>
-                        </div>
-                        <div class="mb-3">
-                          
-                          <a href="forget.html" class="form-check-label text-white text-decoration-none fs-5" for="exampleCheck1"
-                            >Forgot Password ?</a
-                          >
-                        </div>
-                        <button type="submit" class="btn btn-sign">Sign in</button>
-                      </form>
-                      <div>
-                       <h5 class="or">Or</h5>
-                      </div>
-                      <button type="button" class="btn btn-goggle" >Sign in with google</button>
-                       <div class="d-flex align-items-baseline">
-                            <p>Don’t have any account?</p>
-                            <a href="register.html" class="ancherTag"> Sign up</a>
-                       </div>
-               </div>
-    
+            <div class="logn-form">
+              <img src="./assets/images/logo.png" alt="logo" />
+              <h1 class="title">Welcome</h1>
+              <form action="dashboard.html" class="form">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Email
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <div class="password_eyes">
+                    <input type="password" id="password" class="form-control" />
+                    <span class="toggle-password" id="togglePassword">
+                      <i class="fa fa-eye" id="eye"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <a
+                    href="forget.html"
+                    class="form-check-label text-white text-decoration-none fs-5"
+                    for="exampleCheck1"
+                    >Forgot Password ?</a
+                  >
+                </div>
+                <button type="submit" class="btn btn-sign">Sign in</button>
+              </form>
+              <div>
+                <h5 class="or">Or</h5>
+              </div>
+              <button type="button" class="btn btn-goggle">
+                Sign in with google
+              </button>
+              <div class="d-flex align-items-baseline">
+                <p>Don’t have any account?</p>
+                <a href="register.html" class="ancherTag"> Sign up</a>
+              </div>
+            </div>
           </div>
           <div class="col-md-6">
-             <img src="./assets/images/banner.png" class="banner-image"  alt="banner"/>
+            <img
+              src="./assets/images/banner.png"
+              class="banner-image"
+              alt="banner"
+            />
           </div>
         </div>
       </div>
     </section>
 
     <script>
-     const passwordField = document.getElementById('password');
-     const togglePasswordButton = document.getElementById('togglePassword');
-     const eyeIcon = document.getElementById('eye');
+      const passwordField = document.getElementById("password");
+      const togglePasswordButton = document.getElementById("togglePassword");
+      const eyeIcon = document.getElementById("eye");
 
-     togglePasswordButton.addEventListener('click', function () {
-     if (passwordField.type === 'password') {
-          passwordField.type = 'text';
-          eyeIcon.classList.remove('fa-eye');
-          eyeIcon.classList.add('fa-eye-slash');
-     } else {
-          passwordField.type = 'password';
-          eyeIcon.classList.remove('fa-eye-slash');
-          eyeIcon.classList.add('fa-eye');
-     }
-     });
+      togglePasswordButton.addEventListener("click", function () {
+        if (passwordField.type === "password") {
+          passwordField.type = "text";
+          eyeIcon.classList.remove("fa-eye");
+          eyeIcon.classList.add("fa-eye-slash");
+        } else {
+          passwordField.type = "password";
+          eyeIcon.classList.remove("fa-eye-slash");
+          eyeIcon.classList.add("fa-eye");
+        }
+      });
     </script>
 
     <script
