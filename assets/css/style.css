@@ -436,11 +436,20 @@ li.lists_video_list p {
   margin: 20px;
 }
 
+.audioss {
+  border-top: 1px solid #616161;
+  background: linear-gradient(0deg, #141B1E 0%, #141B1E 100%), #413740;
+  box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 25%);
+  padding: 10px;
+  display: none;
+}
+
 .editer {
   border-top: 1px solid #616161;
   background: linear-gradient(0deg, #141B1E 0%, #141B1E 100%), #413740;
   box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 25%);
   padding: 10px;
+  display: none;
 }
 
 .nav-link.active {
@@ -461,6 +470,37 @@ select.form-select {
   color: #f7a01e !important;
   border-color: #f7a01e !important;
   background-color: transparent !important;
+}
+
+#exampleModal .modal-dialog {
+  width: 1076px !important;
+  max-width: unset;
+}
+
+.Youth {
+  background: rgba(97, 97, 97, 0.15);
+  box-shadow: 0px 0.8px 3.2px 0px rgb(0 0 0 / 25%);
+  text-align: center;
+  padding: 1px 10px;
+  border-radius: 23px;
+}
+
+.modal-content {
+  background: linear-gradient(298deg, #2E1D2A 0.67%, #474048 98.11%);
+  color: #f7a01e;
+}
+
+button.btn-close {
+  background: transparent !important;
+  color: white !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.drop_box.text-center {
+  padding: 40px 26px;
+  background: rgba(97, 97, 97, 0.15);
+  border-radius: 9px;
 }
 
 @media only screen and (max-width: 600px) {

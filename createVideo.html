@@ -55,15 +55,19 @@
               <span class="material-symbols-outlined"> account_circle </span>
               <p class="m-0">Avatar</p>
             </li>
-            <li class="lists_video_list cursor-pointer">
+            <li class="lists_video_list cursor-pointer" onclick="video()">
               <span class="material-symbols-outlined"> text_fields </span>
               <p class="m-0">Text</p>
             </li>
-            <li class="lists_video_list cursor-pointer">
+            <li class="lists_video_list cursor-pointer" onclick="audio()">
               <span class="material-symbols-outlined"> music_note </span>
               <p class="m-0">Audio</p>
             </li>
-            <li class="lists_video_list cursor-pointer">
+            <li
+              class="lists_video_list cursor-pointer"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
               <span class="material-symbols-outlined"> mic </span>
               <p class="m-0">Voice Library</p>
             </li>
@@ -199,69 +203,69 @@
                   aria-labelledby="profile-tab"
                   tabindex="0"
                 >
-              <div>
-                <div class="mt-2">
-                  <p class="fw-bold text-white">Talking Photos</p>
-                  <div class="row">
-                    <div class="col-4">
-                      <div class="Talking">
-                        <img
-                          src="./assets/images/create_video/preview_talk_1_medium.webp"
-                          width="100%"
-                          alt="avatar"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="Talking">
-                        <img
-                          src="./assets/images/create_video/preview_talk_2_medium.webp"
-                          width="100%"
-                          alt="avatar"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="Talking">
-                        <img
-                          src="./assets/images/create_video/preview_target_medium.webp"
-                          width="100%"
-                          alt="avatar"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="Talking">
-                        <img
-                          src="./assets/images/create_video/preview_target_medium1.webp"
-                          width="100%"
-                          alt="avatar"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="Talking">
-                        <img
-                          src="./assets/images/create_video/preview_target_medium2.webp"
-                          width="100%"
-                          alt="avatar"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="Talking">
-                        <img
-                          src="./assets/images/create_video/preview_target_medium3.webp"
-                          width="100%"
-                          alt="avatar"
-                        />
+                  <div>
+                    <div class="mt-2">
+                      <p class="fw-bold text-white">Talking Photos</p>
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="Talking">
+                            <img
+                              src="./assets/images/create_video/preview_talk_1_medium.webp"
+                              width="100%"
+                              alt="avatar"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="Talking">
+                            <img
+                              src="./assets/images/create_video/preview_talk_2_medium.webp"
+                              width="100%"
+                              alt="avatar"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="Talking">
+                            <img
+                              src="./assets/images/create_video/preview_target_medium.webp"
+                              width="100%"
+                              alt="avatar"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="Talking">
+                            <img
+                              src="./assets/images/create_video/preview_target_medium1.webp"
+                              width="100%"
+                              alt="avatar"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="Talking">
+                            <img
+                              src="./assets/images/create_video/preview_target_medium2.webp"
+                              width="100%"
+                              alt="avatar"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="Talking">
+                            <img
+                              src="./assets/images/create_video/preview_target_medium3.webp"
+                              width="100%"
+                              alt="avatar"
+                            />
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              </div>
-            </div>
             </div>
           </div>
         </div>
@@ -284,7 +288,7 @@
             </div>
           </div>
         </div>
-        <div class="editer ">
+        <div class="editer" id="editer">
           <div class="row">
             <div class="col-md-8">
               <form>
@@ -304,21 +308,390 @@
               </form>
             </div>
             <div class="col-md-4">
+              <div class="voice">
+                <div class="d-flex">
+                  <img
+                    src="./assets/images/create_video/in.png"
+                    class="d-flex align-self-sm-center"
+                    alt="flag"
+                  />
+                  <div class="px-2">
+                    <p class="m-0">Aalia - Natural</p>
+                    <p class="m-0">Bangla,Female,Youth</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-               <div class="voice">
-                    <div class="d-flex">
-                        <img src="./assets/images/create_video/in.png" class="d-flex align-self-sm-center" alt="flag"/>
-                        <div class="px-2">
-                             <p class="m-0">Aalia - Natural</p>
-                             <p class="m-0">Bangla,Female,Youth</p>
-                        </div>
-                    </div>
-               </div>
+        <div class="audioss" id="audioss">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="text-yellow">For better results, please record a clear voice without any background noise.</p>
+              <div class="d-flex justify-content-center py-5" >
+                <audio controls>
+                </audio>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="drop_box text-center">
+                <header>
+                  <h4 class="text-yellow">Select File here</h4>
+                </header>
+                <p class="text-yellow">Files Supported: MP3, WAV Up to 100Mb, 5min</p>
+                <input type="file" hidden accept=".doc,.docx,.pdf" id="fileID" style="display:none;">
+                <div class="text-center mx-auto">
+                  <button class="btn btn-submit mx-auto">Choose File</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Voice Library
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <span class="material-symbols-outlined"> close </span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <div class="card-header">
+                      <h5 class="text-yellow"> <img src='./assets/images/create_video/in.png' class="me-3" alt="flag"   /> Aalia - Natural</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex justify-content-around mb-3">
+                        <div class="Youth text-yellow">Youth</div>
+                        <div class="Youth text-yellow">Female</div>
+                        <div class="Youth text-yellow">Bangla</div>
+                      </div>
+                      <audio controls>
+                        <source
+                          src="https://static.movio.la/voice_preview/4526c49ba75948078cf3e9ca074d2482.wav"
+                          type="audio/ogg"
+                        />
+                        <source
+                          src="https://static.movio.la/voice_preview/4526c49ba75948078cf3e9ca074d2482.wav"
+                          type="audio/wav"
+                        />
+                        Your browser does not support the audio tag.
+                      </audio>
+
+                      <div class="text-center">
+                        <button class="btn btn-submit mx-auto" type="button">
+                          Select
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <div class="card-header">
+                      <h5 class="text-yellow"> <img src='./assets/images/create_video/in.png' class="me-3" alt="flag"   /> Aalia - Natural</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex justify-content-around mb-3">
+                        <div class="Youth text-yellow">Youth</div>
+                        <div class="Youth text-yellow">Female</div>
+                        <div class="Youth text-yellow">Bangla</div>
+                      </div>
+                      <audio controls>
+                        <source
+                          src="https://static.movio.la/voice_preview/4526c49ba75948078cf3e9ca074d2482.wav"
+                          type="audio/ogg"
+                        />
+                        <source
+                          src="https://static.movio.la/voice_preview/4526c49ba75948078cf3e9ca074d2482.wav"
+                          type="audio/wav"
+                        />
+                        Your browser does not support the audio tag.
+                      </audio>
+
+                      <div class="text-center">
+                        <button class="btn btn-submit mx-auto" type="button">
+                          Select
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <div class="card-header">
+                      <h5 class="text-yellow"> <img src='./assets/images/create_video/in.png' class="me-3" alt="flag"   /> Aalia - Natural</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex justify-content-around mb-3">
+                        <div class="Youth text-yellow">Youth</div>
+                        <div class="Youth text-yellow">Female</div>
+                        <div class="Youth text-yellow">Bangla</div>
+                      </div>
+                      <audio controls>
+                        <source
+                          src="https://static.movio.la/voice_preview/4526c49ba75948078cf3e9ca074d2482.wav"
+                          type="audio/ogg"
+                        />
+                        <source
+                          src="https://static.movio.la/voice_preview/4526c49ba75948078cf3e9ca074d2482.wav"
+                          type="audio/wav"
+                        />
+                        Your browser does not support the audio tag.
+                      </audio>
+
+                      <div class="text-center">
+                        <button class="btn btn-submit mx-auto" type="button">
+                          Select
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <div class="card-header">
+                      <h5 class="text-yellow"> <img src='./assets/images/create_video/in.png' class="me-3" alt="flag"   /> Aalia - Natural</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex justify-content-around mb-3">
+                        <div class="Youth text-yellow">Youth</div>
+                        <div class="Youth text-yellow">Female</div>
+                        <div class="Youth text-yellow">Bangla</div>
+                      </div>
+                      <audio controls>
+                        <source
+                          src="https://static.movio.la/voice_preview/4526c49ba75948078cf3e9ca074d2482.wav"
+                          type="audio/ogg"
+                        />
+                        <source
+                          src="https://static.movio.la/voice_preview/4526c49ba75948078cf3e9ca074d2482.wav"
+                          type="audio/wav"
+                        />
+                        Your browser does not support the audio tag.
+                      </audio>
+
+                      <div class="text-center">
+                        <button class="btn btn-submit mx-auto" type="button">
+                          Select
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <div class="card-header">
+                      <h5 class="text-yellow"> <img src='./assets/images/create_video/in.png' class="me-3" alt="flag"   /> Aalia - Natural</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex justify-content-around mb-3">
+                        <div class="Youth text-yellow">Youth</div>
+                        <div class="Youth text-yellow">Female</div>
+                        <div class="Youth text-yellow">Bangla</div>
+                      </div>
+                      <audio controls>
+                        <source
+                          src="https://static.movio.la/voice_preview/4526c49ba75948078cf3e9ca074d2482.wav"
+                          type="audio/ogg"
+                        />
+                        <source
+                          src="https://static.movio.la/voice_preview/4526c49ba75948078cf3e9ca074d2482.wav"
+                          type="audio/wav"
+                        />
+                        Your browser does not support the audio tag.
+                      </audio>
+
+                      <div class="text-center">
+                        <button class="btn btn-submit mx-auto" type="button">
+                          Select
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <div class="card-header">
+                      <h5 class="text-yellow"> <img src='./assets/images/create_video/in.png' class="me-3" alt="flag"   /> Aalia - Natural</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex justify-content-around mb-3">
+                        <div class="Youth text-yellow">Youth</div>
+                        <div class="Youth text-yellow">Female</div>
+                        <div class="Youth text-yellow">Bangla</div>
+                      </div>
+                      <audio controls>
+                        <source
+                          src="https://static.movio.la/voice_preview/4526c49ba75948078cf3e9ca074d2482.wav"
+                          type="audio/ogg"
+                        />
+                        <source
+                          src="https://static.movio.la/voice_preview/4526c49ba75948078cf3e9ca074d2482.wav"
+                          type="audio/wav"
+                        />
+                        Your browser does not support the audio tag.
+                      </audio>
+
+                      <div class="text-center">
+                        <button class="btn btn-submit mx-auto" type="button">
+                          Select
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <div class="card-header">
+                      <h5 class="text-yellow"> <img src='./assets/images/create_video/in.png' class="me-3" alt="flag"   /> Aalia - Natural</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex justify-content-around mb-3">
+                        <div class="Youth text-yellow">Youth</div>
+                        <div class="Youth text-yellow">Female</div>
+                        <div class="Youth text-yellow">Bangla</div>
+                      </div>
+                      <audio controls>
+                        <source
+                          src="https://static.movio.la/voice_preview/4526c49ba75948078cf3e9ca074d2482.wav"
+                          type="audio/ogg"
+                        />
+                        <source
+                          src="https://static.movio.la/voice_preview/4526c49ba75948078cf3e9ca074d2482.wav"
+                          type="audio/wav"
+                        />
+                        Your browser does not support the audio tag.
+                      </audio>
+
+                      <div class="text-center">
+                        <button class="btn btn-submit mx-auto" type="button">
+                          Select
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <div class="card-header">
+                      <h5 class="text-yellow"> <img src='./assets/images/create_video/in.png' class="me-3" alt="flag"   /> Aalia - Natural</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex justify-content-around mb-3">
+                        <div class="Youth text-yellow">Youth</div>
+                        <div class="Youth text-yellow">Female</div>
+                        <div class="Youth text-yellow">Bangla</div>
+                      </div>
+                      <audio controls>
+                        <source
+                          src="https://static.movio.la/voice_preview/4526c49ba75948078cf3e9ca074d2482.wav"
+                          type="audio/ogg"
+                        />
+                        <source
+                          src="https://static.movio.la/voice_preview/4526c49ba75948078cf3e9ca074d2482.wav"
+                          type="audio/wav"
+                        />
+                        Your browser does not support the audio tag.
+                      </audio>
+
+                      <div class="text-center">
+                        <button class="btn btn-submit mx-auto" type="button">
+                          Select
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <div class="card-header">
+                      <h5 class="text-yellow"> <img src='./assets/images/create_video/in.png' class="me-3" alt="flag"   /> Aalia - Natural</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex justify-content-around mb-3">
+                        <div class="Youth text-yellow">Youth</div>
+                        <div class="Youth text-yellow">Female</div>
+                        <div class="Youth text-yellow">Bangla</div>
+                      </div>
+                      <audio controls>
+                        <source
+                          src="https://static.movio.la/voice_preview/4526c49ba75948078cf3e9ca074d2482.wav"
+                          type="audio/ogg"
+                        />
+                        <source
+                          src="https://static.movio.la/voice_preview/4526c49ba75948078cf3e9ca074d2482.wav"
+                          type="audio/wav"
+                        />
+                        Your browser does not support the audio tag.
+                      </audio>
+
+                      <div class="text-center">
+                        <button class="btn btn-submit mx-auto" type="button">
+                          Select
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <div class="card-header">
+                      <h5 class="text-yellow"> <img src='./assets/images/create_video/in.png' class="me-3" alt="flag"   /> Aalia - Natural</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex justify-content-around mb-3">
+                        <div class="Youth text-yellow">Youth</div>
+                        <div class="Youth text-yellow">Female</div>
+                        <div class="Youth text-yellow">Bangla</div>
+                      </div>
+                      <audio controls>
+                        <source
+                          src="https://static.movio.la/voice_preview/4526c49ba75948078cf3e9ca074d2482.wav"
+                          type="audio/ogg"
+                        />
+                        <source
+                          src="https://static.movio.la/voice_preview/4526c49ba75948078cf3e9ca074d2482.wav"
+                          type="audio/wav"
+                        />
+                        Your browser does not support the audio tag.
+                      </audio>
+
+                      <div class="text-center">
+                        <button class="btn btn-submit mx-auto" type="button">
+                          Select
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script>
       function toggleDiv() {
@@ -336,6 +709,31 @@
       document
         .getElementById("list_active")
         .addEventListener("click", toggleDiv);
+
+        const dropArea = document.querySelector(".drop_box"),
+        button = dropArea.querySelector("button"),
+        dragText = dropArea.querySelector("header"),
+        input = dropArea.querySelector("input");
+          let file;
+          var filename;
+
+          button.onclick = () => {
+            input.click();
+          };
+
+          input.addEventListener("change", function (e) {
+            var fileName = e.target.files[0].name;
+            let filedata = `
+              <form action="" method="post">
+              <div class="form">
+              <h4>${fileName}</h4>
+              <input type="email" placeholder="Enter email upload file">
+              <button class="btn">Upload</button>
+              </div>
+              </form>`;
+            dropArea.innerHTML = filedata;
+          });
+
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
